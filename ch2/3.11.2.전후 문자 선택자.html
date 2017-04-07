@@ -1,0 +1,19 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>전후 문자 선택자</title>
+  <style media="screen">
+    p {counter-increment: rint;}
+    p::before {content: counter(rint)".";}
+    p::after {content: "-" attr(data-page) "page";}
+    p::first-letter {font-size: 3em;}
+  </style>
+</head>
+<body>
+  <h1>Lorem ipsum dolor sit amet.</h1>
+  <p data-page="52">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <p data-page="237">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et.</p>
+</body>
+</html>

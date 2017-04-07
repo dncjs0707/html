@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>상태 선택자와 동위 선택자의 복합 활용</title>
+  <style media="screen">
+    input[type=checkbox]:checked + div {
+      height: 0px;
+    }
+    div {
+      overflow: hidden;
+      width: 650; height: 300px;
+      -ms-transition-duration:1s;
+      -webkit-transition-duration:1s;
+      -moz-transition-duration:1s;
+      transition-duration:1s;
+    }
+  </style>
+</head>
+<body>
+  <input type="checkbox" />
+  <div>
+    <h1>Lorem ipsum dolor.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+  </div>
+</body>
+</html>
